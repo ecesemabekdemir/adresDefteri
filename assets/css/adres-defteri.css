@@ -1,0 +1,137 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.adressHeader {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.adressHeader h1 {
+  font-size: 24px;
+  color: #fff;
+}
+
+.adressHeader button {
+  background-color: #ff6f61;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.adressHeader button:hover {
+  background-color: #ff3f3f;
+}
+
+#modal {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  width: 300px;
+  max-width: 90%;
+  margin: 20px auto;
+}
+
+.adresDefArray {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 27px;
+}
+
+.adress {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.adress h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.adress p {
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: #666;
+}
+
+.adressEditControls {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.adressEditControls a {
+  cursor: pointer;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.adressEditControls a svg {
+  width: 16px;
+  height: 16px;
+}
+
+dialog {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#adressBookForm p {
+  margin-bottom: 10px;
+}
+
+#adressBookForm input, form button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.modelAddNew , .modelEdit  {
+  color: #333;
+  border: none;
+  cursor: pointer;
+}
+
+#adressBookForm  button:hover {
+  background-color: #0056b3;
+}
+
+#adressBookForm  button {
+  background-color: #007bff;
+  color: #333;
+}
+
+#adressBookForm  button:hover {
+  background-color: #999;
+}
